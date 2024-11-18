@@ -1,0 +1,17 @@
+// custom.scss
+
+// Importar funções do Bootstrap (necessárias para variáveis)
+@import 'bootstrap/scss/functions';
+
+// Sobrescreva as variáveis aqui, antes de importar qualquer coisa do Bootstrap
+$primary: #2ecc71;   // Verde principal para sustentabilidade
+$secondary: #f1c40f; // Amarelo para energia solar
+$success: #27ae60;   // Verde escuro para sucesso
+$info: #3498db;      // Azul claro para informação
+$warning: #f39c12;   // Laranja para alertas
+$danger: #e74c3c;    // Vermelho para erros
+$light: #ecf0f1;     // Cinza claro para fundos/bordas
+$dark: #34495e;      // Azul escuro para textos/fundos escuros
+
+// Agora importe o Bootstrap para aplicar as variáveis
+@import 'bootstrap/scss/bootstrap';

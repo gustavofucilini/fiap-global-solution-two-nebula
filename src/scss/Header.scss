@@ -1,0 +1,29 @@
+@import "custom.scss";
+
+.navbar {
+  background-color: $dark; // Fundo do navbar ajustado para azul escuro
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+
+  .nav-link {
+    color: $light; // Links em cinza claro para contraste
+    font-size: large;
+
+    &.active {
+      color: $primary !important; // Verde como cor de destaque para links ativos
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: $secondary; // Amarelo para hover
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "custom.scss";
+
+.hero-section {
+  background: linear-gradient(135deg, $primary, $secondary); // Gradiente de verde e amarelo
+  color: $light; // Texto claro para contraste
+  padding: 100px 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: $light; // Título em branco
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: $light;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: $dark; // Azul escuro
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: $dark; // Azul escuro
+}
+
+.video-card {
+  background-color: $light; // Fundo branco
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .video-title {
+    color: $primary; // Verde para título
+  }
+
+  a {
+    color: $secondary; // Amarelo para links
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
