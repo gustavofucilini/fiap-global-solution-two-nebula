@@ -1,26 +1,31 @@
-import React from 'react';
-import { Navbar, Nav, NavLink } from 'react-bootstrap';
-import logo from '../assets/NebulaTeam-BG_OFF.png'; // Substitua pelo caminho correto do logotipo
-import '../scss/Header.scss';
+import React from "react";
+import { Navbar, Nav, NavLink } from "react-bootstrap";
+import logo from "../assets/NebulaTeam-BG_OFF.png"; // Substitua pelo caminho correto do logotipo
+import "../scss/Header.scss";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" style={{ minHeight: '80px', padding: "5px 50px 5px 50px" }}>
-      <Navbar.Brand href="/" className="d-flex align-items-center">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      style={{ minHeight: "80px", padding: "5px 50px 5px 50px" }}
+    >
+      <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center">
         <img
           src={logo}
           width="50"
           height="50"
           className="d-inline-block align-top"
           alt="Logo do projeto Energia Solar"
-          style={{ marginRight: '10px' }}
+          style={{ marginRight: "10px" }}
         />
         <span className="text-light fw-bold">Nebula Team</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link as={NavLink} to="/" exact>
+          <Nav.Link as={NavLink} to="/">
             Início
           </Nav.Link>
           <Nav.Link as={NavLink} to="/about">
