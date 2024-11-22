@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -12,19 +12,19 @@ function Footer() {
           </Col>
           <Col md={6} className="text-end">
             <Nav className="justify-content-end">
-              <Nav.Link as={NavLink} to="/" className="text-light">
+              <Nav.Link as={RouterNavLink} to="/" className="text-light">
                 Início
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/about" className="text-light">
+              <Nav.Link as={RouterNavLink} to="/about" className="text-light">
                 Sobre
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/problema" className="text-light">
+              <Nav.Link as={RouterNavLink} to="/problema" className="text-light">
                 Problema
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/solucao" className="text-light">
+              <Nav.Link as={RouterNavLink} to="/solucao" className="text-light">
                 Solução
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contato" className="text-light">
+              <Nav.Link as={RouterNavLink} to="/contato" className="text-light">
                 Contato
               </Nav.Link>
             </Nav>
