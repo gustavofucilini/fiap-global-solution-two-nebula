@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav, NavLink } from 'react-bootstrap';
 
 function Footer() {
   return (
@@ -10,21 +10,23 @@ function Footer() {
             <p>&copy; 2024 Energia Solar para Comunidades Carentes.</p>
           </Col>
           <Col md={6} className="text-end">
-            <a href="/" className="text-light me-3">
-              Início
-            </a>
-            <a href="/about" className="text-light me-3">
-              Sobre
-            </a>
-            <a href="/problema" className="text-light me-3">
-              Problema
-            </a>
-            <a href="/solucao" className="text-light me-3">
-              Solução
-            </a>
-            <a href="/contato" className="text-light">
-              Contato
-            </a>
+            <Nav className="justify-content-end">
+              <Nav.Link as={NavLink} to="/" className="text-light">
+                Início
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/about" className="text-light">
+                Sobre
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/problema" className="text-light">
+                Problema
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/solucao" className="text-light">
+                Solução
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/contato" className="text-light">
+                Contato
+              </Nav.Link>
+            </Nav>
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, NavLink } from 'react-bootstrap';
 import logo from '../assets/NebulaTeam-BG_OFF.png'; // Substitua pelo caminho correto do logotipo
 import '../scss/Header.scss';
 
